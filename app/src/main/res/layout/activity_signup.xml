@@ -1,0 +1,112 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.luamtele.android.Activities.Signup"
+    android:id="@+id/ss"
+    android:layout_width="match_parent"
+    >
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:id="@+id/tfname"
+        android:hint="  Name"
+        android:inputType="text"
+        android:background="@drawable/layer"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tfsurname"
+        android:layout_alignStart="@+id/tfsurname"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:id="@+id/tfpseudo"
+        android:hint="  Pseudo"
+        android:background="@drawable/layer"
+        android:layout_below="@+id/tfsurname"
+        android:layout_alignLeft="@+id/tfemail"
+        android:layout_alignStart="@+id/tfemail"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:id="@+id/tfemail"
+        android:hint="  Email"
+        android:background="@drawable/layer"
+        android:layout_below="@+id/tfpseudo"
+        android:layout_alignLeft="@+id/tfpassword"
+        android:layout_alignStart="@+id/tfpassword"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textEmailAddress" />
+
+
+    <Button
+        android:id="@+id/idsingup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/inscrir"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/tfconfpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/tfpassword"
+        android:hint="  Password"
+        android:maxLength="25"
+        android:background="@drawable/layer"
+        android:layout_below="@+id/tfemail"
+        android:layout_alignLeft="@+id/tfconfpass"
+        android:layout_alignStart="@+id/tfconfpass"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/tfconfpass"
+        android:hint="  Confirm your password"
+        android:maxLength="25"
+        android:background="@drawable/layer"
+        android:layout_below="@+id/tfpassword"
+        android:layout_alignLeft="@+id/idsingup"
+        android:layout_alignStart="@+id/idsingup"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#d8d7d8" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:id="@+id/tfsurname"
+        android:hint="  Surname"
+        android:background="@drawable/layer"
+        android:layout_below="@+id/tfname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="text" />
+
+</RelativeLayout>
+</ScrollView>

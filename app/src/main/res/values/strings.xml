@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Luamtele</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="mon_texte">Masta FLex</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Accueil</item>
+        <item>Les chaines</item>
+        <item>Mon compte</item>
+        <item>Paramètres</item>
+        <item>A Propos</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home_white_24dp</item>
+        <item>@drawable/ic_tv_white_24dp</item>
+        <item>@drawable/ic_person_white_24dp</item>
+        <item>@drawable/ic_settings_white_24dp</item>
+        <item>@drawable/ic_info_white_24dp</item>
+    </array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="home_tab_titles">
+        <item>Now</item>
+        <item>Ce soir</item>
+        <item>2e Partie</item>
+    </string-array>
+
+    <string name="title_activity_tv_show">TvShowActivity</string>
+    <string name="title_activity_channel_view">ChannelViewActivity</string>
+    <string name="title_activity_channel_list">ChannelListActivity</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luamtele.android.Activities.Login"
+    android:background="#ff1822b9">
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff1822b9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/lion"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/usertexte"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/textediter"
+        android:layout_marginBottom="40dp"
+        android:hint="Identifiant : mail"
+        android:textColor="#999999"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/usertexte"
+        android:background="@drawable/textediterpassword"
+        android:layout_marginBottom="50dp"
+        android:hint="Mot de passe"
+        android:textColor="#999999"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnlogin"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnButtonClick"
+        android:background="@drawable/conn"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnsignup"
+        android:layout_below="@+id/btnlogin"
+        android:layout_alignRight="@+id/btnlogin"
+        android:layout_alignEnd="@+id/btnlogin"
+        android:layout_alignLeft="@+id/btnlogin"
+        android:layout_alignStart="@+id/btnlogin"
+        android:onClick="OnButtonClick"
+        android:background="@drawable/crer"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+    </ScrollView>
